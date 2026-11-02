@@ -722,6 +722,7 @@ int main(int argc, char **argv)
 }
 ```
 ## OUTPUT:
+```
 /tmp/tmp3elujqwu/f1bd0569-d492-41dc-a2d6-f52e2d4cd1c8/cuda_exec.out Starting...
 Using Device 0: Tesla T4
 Vector size 16777216
@@ -729,7 +730,8 @@ initialData Time elapsed 0.665905 sec
 sumArraysOnHost Time elapsed 0.051929 sec
 sumArraysOnGPU <<<  65536, 256  >>>  Time elapsed 0.000918 sec
 Arrays match.
-
+```
+```
 /tmp/tmp3elujqwu/b3b85f90-aaed-44e4-849a-057c9af908d2/cuda_exec.out Starting...
 Using Device 0: Tesla T4
 Vector size 16777216
@@ -737,7 +739,8 @@ initialData Time elapsed 0.661782 sec
 sumArraysOnHost Time elapsed 0.052984 sec
 sumArraysOnGPU <<<  32768, 512  >>>  Time elapsed 0.001829 sec
 Arrays match.
-
+```
+```
 /tmp/tmp3elujqwu/3a14a85c-a5ca-492a-a2ab-f0ac25791c28/cuda_exec.out Starting...
 Using Device 0: Tesla T4
 Vector size 16777216
@@ -745,7 +748,8 @@ initialData Time elapsed 0.678836 sec
 sumArraysOnHost Time elapsed 0.052298 sec
 sumArraysOnGPU <<<  16401, 1023  >>>  Time elapsed 0.000973 sec
 Arrays match.
-
+```
+```
 /tmp/tmp3elujqwu/d6d64c1e-b501-458e-b5c7-39d5be7dc5e4/cuda_exec.out Starting...
 Using Device 0: Tesla T4
 Vector size 16777216
@@ -753,6 +757,7 @@ initialData Time elapsed 0.667831 sec
 sumArraysOnHost Time elapsed 0.053476 sec
 sumArraysOnGPU <<<  16384, 1024  >>>  Time elapsed 0.000922 sec
 Arrays match.
+```
 
 ## RESULT:
 Thus, implementation of sum of arrays on host and device using NVIDIA CUDA (NVCC) with random number initialization was successfully completed. The program was executed on an NVIDIA Tesla T4 GPU. The output arrays matched for all tested configurations.
